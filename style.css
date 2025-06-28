@@ -1,0 +1,147 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+    background-image: url(/img/leaves.png);
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Style */
+body {
+  /* 11. Set a default font family */
+  font-family: Arial, sans-serif;
+  /* 12. Set a default background color */
+  
+  /* 13. Set a default text color */
+  color: #333;
+}
+
+.container {
+  /* 14. Center the container */
+  max-width: 1200px;
+  width: 800px;
+  margin: 10px auto;
+  background-color: antiquewhite;
+}
+
+.header {
+  color: black;
+  padding: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 37px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: yellowgreen 1px 1px 2px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header ul li{
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: salmon;
+}
+
+.header a:hover {
+  color: blue;
+}
+
+.hero {
+  height: 280px;
+  background-image: url(/img/code.jpg);
+  background-size: cover;
+  background-position: 0 -210px;
+  padding: 0;
+  border-top: 5px solid salmon;
+  border-bottom: 5px solid lightblue;
+}
+
+.content {
+  padding: 10px;
+}
+
+.content h2 {
+  color: #333;
+}
+
+.content .p1 {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.content p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.footer {
+  height: 40px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer .copy {
+  margin: 0;
+  font-size: 14px;
+} 
