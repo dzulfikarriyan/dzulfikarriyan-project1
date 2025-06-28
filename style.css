@@ -12,7 +12,7 @@
 @media (prefers-reduced-motion: no-preference) {
   html {
     interpolate-size: allow-keywords;
-    background-image: url(/img/leaves.png);
+    background-image: url("https://github.com/dzulfikarriyan/dzulfikarriyan-project1/blob/main/img/leaves.png?raw=true");
   }
 }
 
@@ -107,7 +107,7 @@ body {
 
 .hero {
   height: 280px;
-  background-image: url(/img/code.jpg);
+  background-image: url("https://github.com/dzulfikarriyan/dzulfikarriyan-project1/blob/main/img/code.jpg?raw=true");
   background-size: cover;
   background-position: 0 -210px;
   padding: 0;
